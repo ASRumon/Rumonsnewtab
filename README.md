@@ -1,12 +1,15 @@
-# Roman's New Tab
+# Rumon's New Tab Extension
 
-**Roman's New Tab** is a feature-rich Chrome extension designed to transform your new tab page into a powerful productivity hub. This extension integrates various functionalities to enhance your browsing experience and streamline your workflow.
+## Overview
+
+Welcome to Rumon's New Tab Extension! This project is designed to enhance your new tab page with powerful tools and customization options. The extension includes various features such as a calculator, bookmarks section, history section, reminders, and much more.
 
 ## Features
 
 - **Calculator**: Perform quick calculations directly from your new tab page.
 - **Bookmarks Section**: Access and manage your favorite websites easily.
 - **History Section**: View and navigate your recent browsing history.
+- **Reminder**: Set and manage reminders to keep track of important tasks and events.
 - **Countdown Timer**: Set and track countdowns for important events.
 - **Text Encryption & Decryption**: Securely encrypt and decrypt text for private information.
 - **Note-Taking Functionality**: Take quick notes and save important information.
@@ -15,26 +18,36 @@
 - **Supersearch**: Enhanced search functionality to quickly find information.
 - **New Website Pinning**: Pin and organize your most frequently visited websites for easy access.
 
+## Screenshots
+
+Below are some screenshots of the extension in action:
+
+![Screenshot 1](web/images/full.png)
+
 ## Installation
 
-1. **Download**: Get the extension from the [Chrome Web Store](#).
-2. **Install**: Click “Add to Chrome” and confirm to install the extension.
-3. **Set Up**: Open a new tab to start using the extension and configure your settings as desired.
+Since this extension is not available in the Chrome Web Store, you can install it manually by following these steps:
 
-## Usage
+1. Download the extension ZIP file from [GitHub Releases](https://github.com/yourusername/your-repo/releases/download/v1.0/romans-new-tab.zip).
+2. Extract the ZIP file to a location on your computer.
+3. Open Google Chrome and go to `chrome://extensions/`.
+4. Enable "Developer mode" by toggling the switch at the top right corner.
+5. Click on "Load unpacked" and select the extracted folder of the extension.
+6. The extension should now be installed and visible in your Chrome toolbar.
 
-- **Open a New Tab**: Launch the extension by opening a new tab in Chrome.
-- **Customize**: Use the settings menu to tailor the features to your needs. Add or remove widgets, adjust settings, and organize your layout.
-- **Access Features**: Utilize the calculator, countdown timer, note-taking, and other functionalities directly from the new tab page.
+If you encounter any issues, please feel free to [contact me](mailto:your-email@example.com) for assistance.
 
-## Contributing
+## Download
 
-Contributions are welcome! If you encounter any issues or have suggestions for improvements, please open an issue or submit a pull request.
+Enhance your browser experience by downloading and installing the extension now:
+
+[Download Now](https://github.com/yourusername/your-repo/releases/download/v1.0/romans-new-tab.zip)
+
+## About the Developer
+
+Created by **Rumon**, a passionate developer with expertise in creating innovative browser extensions. Rumon is dedicated to enhancing user experience with powerful tools and features. For inquiries, please contact [asrumon@duck.com](mailto:asrumon@duck.com).
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](#) file for more details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Contact
-
-For any inquiries or support, please contact asrumon@proton.me.
