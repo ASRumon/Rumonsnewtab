@@ -28,20 +28,20 @@ Below are some screenshots of the extension in action:
 
 Since this extension is not available in the Chrome Web Store, you can install it manually by following these steps:
 
-1. Download the extension ZIP file from [GitHub Releases](https://github.com/yourusername/your-repo/releases/download/v1.0/romans-new-tab.zip).
+1. Download the extension ZIP file from [GitHub Releases](https://github.com/ASRumon/Rumonsnewtab/releases/tag/v1.0).
 2. Extract the ZIP file to a location on your computer.
 3. Open Google Chrome and go to `chrome://extensions/`.
 4. Enable "Developer mode" by toggling the switch at the top right corner.
 5. Click on "Load unpacked" and select the extracted folder of the extension.
 6. The extension should now be installed and visible in your Chrome toolbar.
 
-If you encounter any issues, please feel free to [contact me](mailto:your-email@example.com) for assistance.
+If you encounter any issues, please feel free to [contact me](mailto:asrumon@duck.com) for assistance.
 
 ## Download
-
+[Download Now](https://github.com/ASRumon/Rumonsnewtab/releases/download/v1.0/Rumons.Newtab.zip)
 Enhance your browser experience by downloading and installing the extension now:
 
-[Download Now](https://github.com/yourusername/your-repo/releases/download/v1.0/romans-new-tab.zip)
+
 
 ## About the Developer
 
