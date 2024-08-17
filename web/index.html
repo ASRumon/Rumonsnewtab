@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+
+<style id="webmakerstyle">
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+}
+
+header {
+    background: #4CAF50;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 2s ease-in-out;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+main {
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#features {
+    width: 100%;
+}
+
+.feature-card {
+    background: linear-gradient(135deg, #e0eafc, #cfdef3);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: calc(50% - 20px);
+    display: flex;
+    flex-direction: column;
+}
+
+.feature-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.feature-content {
+    padding: 20px;
+    text-align: center;
+    background: white;
+    border-bottom: 2px solid #e0eafc;
+    border-radius: 10px 10px 0 0;
+}
+
+.feature-content h3 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #333;
+    font-weight: 700;
+}
+
+.feature-content p {
+    margin: 10px 0 0;
+    font-size: 1em;
+    color: #666;
+}
+
+.feature-image {
+    text-align: center;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+}
+
+.feature-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+#screenshots img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+@media (max-width: 768px) {
+    .feature-card {
+        width: 100%;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+</style>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roman's New Tab Extension</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="icons/icon.png" type="image/png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Roman's New Tab Extension</h1>
+            <p>Enhance your new tab page with powerful tools and customization options.</p>
+        </div>
+    </header>
+
+    <main>
+        <section id="features"><h1>Features</h1>
+            <div class="container">
+                
+                <div class="feature-card">
+                    <div class="feature-content">
+                        <h3>Calculator</h3>
+                        <p>Perform quick calculations directly from your new tab page.</p>
+                    </div>
+                    <div class="feature-image">
+                        <img src="images/feature-calculator.png" alt="Calculator">
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-content">
+                        <h3>Bookmarks Section</h3>
+                        <p>Access and manage your favorite websites easily.</p>
+                    </div>
+                    <div class="feature-image">
+                        <img src="images/feature-bookmarks.png" alt="Bookmarks Section">
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-content">
+                        <h3>History Section</h3>
+                        <p>View and navigate your recent browsing history.</p>
+                    </div>
+                    <div class="feature-image">
+                        <img src="images/feature-history.png" alt="History Section">
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-content">
+                        <h3>Countdown Timer</h3>
+                        <p>Set and track countdowns for important events.</p>
+                    </div>
+                    <div class="feature-image">
+                        <img src="images/feature-timer.png" alt="Countdown Timer">
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-content">
+                        <h3>Text Encryption & Decryption</h3>
+                        <p>Securely encrypt and decrypt text for private information.</p>
+                    </div>
+                    <div class="feature-image">
+                        <img src="images/feature-encryption.png" alt="Text Encryption & Decryption">
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-content">
+                        <h3>Note-Taking Functionality</h3>
+                        <p>Take quick notes and save important information.</p>
+                    </div>
+                    <div class="feature-image">
+                        <img src="images/feature-notes.png" alt="Note-Taking Functionality">
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-content">
+                        <h3>Password Generator</h3>
+                        <p>Generate strong and secure passwords for your online accounts.</p>
+                    </div>
+                    <div class="feature-image">
+                        <img src="images/feature-password.png" alt="Password Generator">
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-content">
+                        <h3>Stopwatch</h3>
+                        <p>Keep track of time with a built-in stopwatch.</p>
+                    </div>
+                    <div class="feature-image">
+                        <img src="images/feature-stopwatch.png" alt="Stopwatch">
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-content">
+                        <h3>Supersearch</h3>
+                        <p>Enhanced search functionality to quickly find information.</p>
+                    </div>
+                    <div class="feature-image">
+                        <img src="images/feature-supersearch.png" alt="Supersearch">
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-content">
+                        <h3>New Website Pinning</h3>
+                        <p>Pin and organize your most frequently visited websites for easy access.</p>
+                    </div>
+                    <div class="feature-image">
+                        <img src="images/feature-pin.png" alt="New Website Pinning">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="screenshots">
+            <div class="container">
+                <h2>Screenshots</h2>
+                <img src="images/screenshot1.png" alt="Screenshot 1">
+                <img src="images/screenshot2.png" alt="Screenshot 2">
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <h2>About the Developer</h2>
+                <p>Created by <strong>Roman</strong>, a passionate developer with expertise in creating innovative browser extensions. For inquiries, please contact <a href="mailto:your-email@example.com">your-email@example.com</a>.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Roman's New Tab Extension. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
+
+
+
+</body>
+</html>
