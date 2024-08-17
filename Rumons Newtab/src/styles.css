@@ -1,0 +1,297 @@
+
+		.container {
+			display: flex;
+		}
+
+		.sidebar {
+			width: 25%;
+			/* Adjust styling as needed */
+		}
+
+		.main {
+			width: 73%;
+			/* Adjust styling as needed */
+		}
+		.buttons button {
+
+			padding: 10px 5px;
+			margin-bottom: 10px; /* Adjust spacing between buttons as needed */
+			background: rgba(255, 255, 255, 0.2);
+			border: 0;
+			border-radius: 5px;
+			color: #f5edeb;
+			width: 100%;
+
+			display: flex;
+			align-items: center;
+		}
+
+		.card-container {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 20px;
+			padding: 20px;
+			width: 100%;
+		}
+
+		.service-card {
+			text-decoration: none;
+			color: #000;
+			border-radius: 15px;
+			overflow: hidden;
+			transition: transform 0.3s;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+			width: 150px; /* Fixed width */
+			height: 160px; /* Fixed height */
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.service-card:hover {
+			transform: scale(1.05);
+		}
+
+		.card-content {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			background-color: #f0fffa;
+			border-radius: 15px;
+			padding: 10px;
+			width: 100%; /* Ensures content fits the card */
+			height: 100%; /* Ensures content fits the card */
+			box-sizing: border-box; /* Includes padding in width/height */
+		}
+
+		.service-logo {
+			width: 80px; /* Fixed size */
+			height: 80px; /* Fixed size */
+			margin-bottom: 10px;
+		}
+
+		p {
+			margin: 0;
+			
+			text-align: center;
+		}
+
+		.search-container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			gap: 10px;
+		}
+
+		#search-query {
+			width: 584px; /* Google's width for the search bar */
+			height: 44px; /* Google's height for the search bar */
+			padding: 0 20px; /* Padding inside the search bar */
+			border-radius: 24px; /* Rounded corners */
+			border: 1px solid #dfe1e5; /* Border color */
+			font-size: 16px; /* Font size */
+			background-color: #fff; /* White background */
+			box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28); /* Subtle shadow */
+			transition: box-shadow 0.3s ease-in-out; /* Smooth transition for shadow */
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+		.button-container {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 10px;
+			justify-content: center;
+		}
+
+		.search-button {
+			padding: 10px 20px;
+			border: none;
+			border-radius: 10px;
+			cursor: pointer;
+			transition: transform 0.3s;
+			font-size: 16px;
+			color: #fff;
+			background-color: #000;
+		}
+
+		.search-button:hover {
+			transform: scale(1.05);
+		}
+
+		.google {
+			background-color: #4285F4;
+		}
+		.bing {
+			background-color: #008373;
+		}
+		.duckduckgo {
+			background-color: #DE5833;
+		}
+		.yts {
+			background-color: #2EBD59;
+		}
+		.wikipedia {
+			background-color: #000000;
+		}
+		.commons {
+			background-color: #005A9C;
+		}
+		.moviesjoy {
+			background-color: #4900a8;
+		}
+		.chatgpt{background-color: #333;}
+		.bingchat{background-color: rgb(231, 55, 114);}
+		#shortcuts {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 10px;
+
+			flex-direction: row;
+			align-items: center;
+			gap: 10px;
+			margin: 20px;
+		}
+		.shortcut {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			width: 120px;
+			height: 150px;
+			background-color: #f0fffa;
+			border: 1px solid #ccc;
+			border-radius: 8px;
+			text-align: center;
+			padding: 5px;
+			position: relative;
+            font-size: 30px;
+		}
+		.shortcut img {
+			max-width: 80px;
+			max-height: 80px;
+		}
+		.add-shortcut-btn {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 120px;
+			height: 40px;
+			background-color: #4CAF50;
+			color: white;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			margin: 5px auto;
+		}
+		.popup {
+			display: none;
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 700px;
+			padding: 20px;
+			background: rgba(99, 97, 97, 0.8);
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			border-radius: 8px;
+			z-index: 1000;
+		}
+		.popup input {
+			width: 100%;
+			padding: 8px;
+			border-radius: 20px;
+			border: none;
+			margin: 5px 0;
+			box-sizing: border-box;
+		}
+		.popup > #file-upload-button { display: block;
+			padding: 10px 20px;
+			background-color: #331D2C;
+			color: white;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;}
+		.popup button {
+			width: 100%;
+			padding: 10px;
+			background-color: #4CAF50;
+			color: white;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		.popup-close {
+			position: absolute;
+			top: 10px;
+			right: 10px;
+			cursor: pointer;
+		}
+		#overlay {
+			display: none;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, 0.815);
+			z-index: 999;
+		}
+		.buttons img {
+			margin: 5px 20px;
+		}
+        .bookmark, .favorite {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 5px 0;
+            background-color: #f0fffa;
+            text-decoration: none;
+            color: #333;
+            display: block;
+        }
+        .bookmark:hover, .favorite:hover {
+            background-color: #f0fffa;
+        }
+        .nested {
+            margin-left: 20px;
+        }
+        .item {
+            border: none;
+            border-radius: 5px;
+            padding: 5px 10px;
+            margin: 5px 5px;
+            background-color: #f0fffa;
+            text-decoration: none;
+            color: #333;
+            display: inline-block;
+            cursor: pointer;
+        }
+        .item:hover {
+            background-color: #f0fffa;
+        }
+        .icon {
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+
+
+
+
+
+
+		

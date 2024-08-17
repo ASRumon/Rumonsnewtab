@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.buttons {
+    margin-top: 10px;
+}
+
+button {
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#suggestions {
+    margin-top: 10px;
+    text-align: left;
+    max-width: 80%;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.suggestion {
+    padding: 8px;
+    cursor: pointer;
+}
+
+.suggestion:hover {
+    background-color: #f0f0f0;
+}
+.googlecontainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.googlecontainer a {
+    flex: 1 1 25%; /* Each button takes up 25% of the container width */
+    min-width: 150px; /* Minimum width of a button */
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #252525;
+    color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.googlecontainer a:hover {
+    background-color: #000c03;
+    transform: translateY(-2px);
+}
+
+.googlecontainer p {
+    margin: 0;
+}
+
+@media (max-width: 800px) {
+    .googlecontainer a {
+        flex-basis: 45%; /* Two buttons per row on smaller screens */
+    }
+}
+
+@media (max-width: 600px) {
+    .googlecontainer a {
+        flex-basis: 100%; /* One button per row on smaller screens */
+    }
+}
+
+#protectedContent {
+    display: none;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-top: 20px;
+}
+#errorMessage {
+    color: red;
+    display: none;
+}
+
+.roll-down-container {
+    margin: 20px;
+}
+
+.roll-down-content {
+    display: none;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.roll-down-content.show {
+    display: block;
+   
+}
+
+.roll-down-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}

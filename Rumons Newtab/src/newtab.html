@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>New Tab</title>
+		<link rel="icon" href="../icons/icon.png" type="image/x-icon">
+	</head>
+
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="newtab.css">
+	
+	<script src="math.js"></script>
+	<script src="sweetalert2@11.js"></script>
+	<body>
+		<div class="container">
+			<div class="sidebar">
+				<div class="buttons">
+					<button class="btn" data-action="google">
+						<img src="./icons/icons8_google.svg" alt="Google" style="width: 20px; height: 20px;">
+						Google
+					</button>
+					<button class="btn" data-action="office">
+						<img src="./icons/icons8_office_365.svg" alt="Microsoft Office" style="width: 20px; height: 20px;">
+						Microsoft Office
+					</button>
+					<button class="btn" data-action="chatgpt">
+						<img src="./icons/ChatGPT-Logo.svg" alt="ChatGPT" style="width: 20px; height: 20px;">
+						ChatGPT
+					</button>
+					<button class="btn" data-action="bard">
+						<img src="./icons/Google_Gemini_logo.svg" alt="Bard" style="width: 20px; height: 20px;">
+						Bard
+					</button>
+					<button class="btn" data-action="newTab">
+						<img src="./icons/icons8_add.svg" alt="New Tab" style="width: 20px; height: 20px;">
+						New Tab
+					</button>
+					<button class="btn" data-action="newWindow">
+						<img src="./icons/icons8_external_link.svg" alt="New Window" style="width: 20px; height: 20px;">
+						New Window
+					</button>
+					<button class="btn" data-action="incognitoWindow">
+						<img src="./icons/icons8_anonymous_mask.svg" alt="Incognito Window" style="width: 20px; height: 20px;">
+						Incognito Window
+					</button>
+					<button class="btn" data-action="chromeWebStore">
+						<img src="./icons/Google_Chrome_Web_Store_icon_2015.svg" alt="Chrome Web Store" style="width: 20px; height: 20px;">
+						Chrome Web Store
+					</button>
+					<button class="btn" data-action="bookmarks">
+						<img src="./icons/icons8_bookmark.svg" alt="Bookmarks" style="width: 20px; height: 20px;">
+						Bookmarks
+					</button>
+					<button class="btn" data-action="downloads">
+						<img src="./icons/icons8_download.svg" alt="Downloads" style="width: 20px; height: 20px;">
+						Downloads
+					</button>
+					<button class="btn" data-action="history">
+						<img src="./icons/icons8_time_machine.svg" alt="History" style="width: 20px; height: 20px;">
+						History
+					</button>
+					<button class="btn" data-action="extensions">
+						<img src="./icons/icons8_extensions_folder.svg" alt="Extensions" style="width: 20px; height: 20px;">
+						Extensions
+					</button>
+					<button class="btn" data-action="flags">
+						<img src="./icons/icons8_empty_flag.svg" alt="Flags" style="width: 20px; height: 20px;">
+						Flags
+					</button>
+
+
+					
+
+				</div>
+				<hr>
+<div class="calculator">
+						<h1>Calculator</h1>
+						<input type="text" id="display" class="display" disabled>
+						<div class="buttons">
+							<button class="btn num">7</button>
+							<button class="btn num">8</button>
+							<button class="btn num">9</button>
+							<button class="btn operator">/</button>
+							<button class="btn num">4</button>
+							<button class="btn num">5</button>
+							<button class="btn num">6</button>
+							<button class="btn operator">*</button>
+							<button class="btn num">1</button>
+							<button class="btn num">2</button>
+							<button class="btn num">3</button>
+							<button class="btn operator">-</button>
+							<button class="btn num">0</button>
+							<button class="btn" id="btn-dot">.</button>
+							<button ></button>
+							<button class="btn operator">+</button>
+							<button class="btn" id="btn-clear">C</button>
+							
+							<button class="btn" id="btn-equals">=</button>
+						</div>
+					</div>
+					<hr>
+				<div class="encryptor"><h2>Password-based AES Encryptor/Decryptor</h2>
+					<label for="plaintext">Enter text to encrypt or decrypt:</label>
+					<textarea id="plaintext"></textarea><br><br>
+					
+					<label for="passwords">Enter password:</label>
+					<input type="password" id="password"><br><br>
+				
+					<button id="encryptBtn">Encrypt</button>
+					<button id="decryptBtn">Decrypt</button><br><br>
+				
+					<label for="result">Result:</label>
+					<textarea id="result" readonly></textarea></div>  
+			</div>
+			
+			<div class="main">
+
+
+				<div class="containertime">
+					<div class="time-date">
+						<div id="time"></div>
+						<div id="date"></div>
+					</div>
+					<div id="calendar"></div>
+					<div class="search-container">
+						<input type="text" id="search-query" placeholder="Enter search term">
+						<div id="suggestions-container"></div>
+						<div class="button-container">
+							<button data-engine="google" class="search-button google">Google</button>
+							<button data-engine="bing" class="search-button bing">Bing</button>
+							<button data-engine="duckduckgo" class="search-button duckduckgo">DuckDuckGo</button>
+							<button data-engine="yts" class="search-button yts">YTS.mx</button>
+							<button data-engine="wikipedia" class="search-button wikipedia">Wikipedia</button>
+							<button data-engine="commons" class="search-button commons">Wikipedia Commons</button>
+							<button data-engine="moviesjoy" class="search-button moviesjoy">Moviesjoy</button>
+							<button data-engine="chatgpt" class="search-button chatgpt">ChatGPT</button>
+							
+							<button data-engine="bingchat" class="search-button bingchat">Bing Chat</button>
+						</div><a href="search.html"><button class="search-button" >Super Search</button></a>
+					</div>
+					
+					
+					
+					
+					<div class="reminder-section">
+						<h3>Reminders</h3>
+						<form id="reminder-form">
+							<input type="text" id="reminder-text" placeholder="Reminder" required>
+							<textarea id="reminder-note" placeholder="Note (optional)"></textarea>
+							<input type="datetime-local" id="reminder-datetime" required>
+							<button type="submit">Add Reminder</button>
+						</form>
+						<table id="reminder-table">
+							<thead>
+								<tr>
+									<th>Reminder</th>
+									<th>Note</th>
+									<th>Remaining Time</th>
+									<th>Real Time</th>
+									<th>Delete</th>
+								</tr>
+							</thead>
+							<tbody id="reminder-list"></tbody>
+						</table>
+					</div>
+				</div>
+
+
+				
+
+				<div>
+					<div id="shortcuts"></div>
+					<button class="add-shortcut-btn">Add a Shortcut</button>
+
+					<div id="overlay"></div>
+					<div class="popup">
+						<span class="popup-close">✖</span>
+						<input type="text" id="shortcut-name" placeholder="Shortcut Name"/>
+						<input type="url" id="shortcut-url" placeholder="Shortcut URL"/>
+						<input type="file" id="shortcut-icon" accept="image/*"/>
+						<button id="save-shortcut-btn">Save</button>
+					</div>
+				</div>
+
+				<div
+					class="card-container">
+					<!-- Google Services -->
+					<a href="https://www.google.com" class="service-card">
+						<div class="card-content">
+							<img src="./icons/icons8_google.svg" alt="Google" class="service-logo">
+							<p>Google</p>
+						</div>
+					</a>
+					<a href="https://mail.google.com" class="service-card">
+						<div class="card-content">
+							<img src="./icons/icons8_gmail.svg" alt="Gmail" class="service-logo">
+							<p>Gmail</p>
+						</div>
+					</a>
+					<a href="https://drive.google.com" class="service-card">
+						<div class="card-content">
+							<img src="./icons/icons8_google_drive.svg" alt="Google Drive" class="service-logo">
+							<p>Google Drive</p>
+						</div>
+					</a>
+					<a href="https://calendar.google.com" class="service-card">
+						<div class="card-content">
+							<img src="./icons/icons8_google_calendar.svg" alt="Google Calendar" class="service-logo">
+							<p>Google Calendar</p>
+						</div>
+					</a>
+
+					<!-- Microsoft Services -->
+					<a href="https://www.microsoft.com" class="service-card">
+						<div class="card-content">
+							<img src="./icons/icons8_microsoft.svg" alt="Microsoft" class="service-logo">
+							<p>Microsoft</p>
+						</div>
+					</a>
+					<a href="https://outlook.live.com" class="service-card">
+						<div class="card-content">
+							<img src="./icons/icons8_microsoft_outlook_2019.svg" alt="Outlook" class="service-logo">
+							<p>Outlook</p>
+						</div>
+					</a>
+					<a href="https://onedrive.live.com" class="service-card">
+						<div class="card-content">
+							<img src="./icons/icons8_microsoft_onedrive_2019.svg" alt="OneDrive" class="service-logo">
+							<p>OneDrive</p>
+						</div>
+					</a>
+					<a href="https://www.microsoft.com/en-us/microsoft-365" class="service-card">
+						<div class="card-content">
+							<img src="./icons/icons8_office_365.svg" alt="Microsoft 365" class="service-logo">
+							<p>Microsoft 365</p>
+						</div>
+					</a>
+
+					<!-- ChatGPT -->
+					<a href="https://chat.openai.com" class="service-card">
+						<div class="card-content">
+							<img src="./icons/ChatGPT-Logo.svg" alt="ChatGPT" class="service-logo">
+							<p>ChatGPT</p>
+						</div>
+					</a>
+					<!-- <a href="" class="service-card">
+																																																									<div class="card-content">
+																																																										<img src="./icons"  class="service-logo">
+																																																										<p>ChatGPT</p>
+																																																									</div>
+																																																								</a> -->
+					<a href="https://translate.google.com" class="service-card">
+						<div class="card-content">
+							<img src="./icons/icons8_translation.svg" class="service-logo">
+							<p>Google Translate</p>
+						</div>
+					</a>
+
+					<a href="https://keep.google.com" class="service-card">
+						<div class="card-content">
+							<img src="./icons/icons8_google_keep.svg" class="service-logo">
+							<p>Google Keep</p>
+						</div>
+					</a>
+					<a href="https://docs.google.com" class="service-card">
+						<div class="card-content">
+							<img src="./icons/icons8_google_docs.svg" class="service-logo">
+							<p>Google Docs</p>
+						</div>
+					</a>
+					<a href="https://sheets.google.com" class="service-card">
+						<div class="card-content">
+							<img src="./icons/icons8_google_sheets.svg" class="service-logo">
+							<p>Google Sheets</p>
+						</div>
+					</a>
+					<a href="https://slides.google.com" class="service-card">
+						<div class="card-content">
+							<img src="./icons/icons8_google_slides.svg" class="service-logo">
+							<p>Slides</p>
+						</div>
+					</a>
+					<a href="https://forms.google.com" class="service-card">
+						<div class="card-content">
+							<img src="./icons/icons8_google_forms_new_logo.svg" class="service-logo">
+							<p>Forms</p>
+						</div>
+					</a>
+					<a href="https://sites.google.com" class="service-card">
+						<div class="card-content">
+							<img src="./icons/icons8_google_sites.svg" class="service-logo">
+							<p>Sites</p>
+						</div>
+					</a>
+					<a href="https://onecompiler.com/" class="service-card">
+						<div class="card-content">
+							<img src="./icons/onecompiler.png" class="service-logo">
+							<p>One Compiler</p>
+						</div>
+					</a>
+					<a href="https://www.rapidtables.com/" class="service-card">
+						<div class="card-content">
+							<img src="./icons/rapidtables.png" class="service-logo">
+							<p>RapidTables</p>
+						</div>
+					</a>
+					<a href="https://mail.tm/en/" class="service-card">
+						<div class="card-content">
+							<img src="./icons/mailtm.jpg" class="service-logo">
+							<p>Mail.tm</p>
+						</div>
+					</a>
+					<a href="https://www.calculator.net/" class="service-card">
+						<div class="card-content" style="background-color: rgb(131, 131, 131);">
+							<img src="./icons/calculator-white.svg" class="service-logo">
+							<p>Calculator</p>
+						</div>
+					</a>
+					<a href="https://fdownloader.net/en" class="service-card">
+						<div class="card-content">
+							<img src="./icons/icons8_download.svg" class="service-logo">
+							<p>FDownloder</p>
+						</div>
+					</a>
+					<a href="" class="service-card">
+						<div class="card-content">
+							<img src="./icons" class="service-logo">
+							<p>ChatGPT</p>
+						</div>
+					</a>
+				</div>
+				<div id="notes-container">
+					<h1>Notes</h1>
+					<div id="add-note">
+					  <div id="formatting-buttons">
+						<button id="bold-button">Bold</button>
+						<button id="underline-button">Underline</button>
+						<button id="strikeThrough-button">Strikethrough</button>
+						<button id="highlight-button">Highlight</button>
+						<button id="link-button">Link</button>
+						<input type="color" id="color-picker" />
+						<button id="color-button">Apply Color</button>
+						<button id="superscript-button">Superscript</button>
+						<button id="subscript-button">Subscript</button>
+						<button id="clear-formatting-button">Clear Formatting</button>
+					  </div>
+					  <div id="new-note" contenteditable="true" placeholder="Write your note here..."></div>
+					  <button id="save-note">Save Note</button>
+					</div>
+					<div id="saved-notes"></div>
+				  </div>
+				  
+			
+
+
+				<div id="app-container">
+					<div id="clock-container">
+						<h1 id="clock">00:00:00</h1>
+					</div>
+					<div id="timer-container">
+						<h2>Timer</h2>
+						<input type="number" id="timer-minutes" placeholder="Minutes">
+						<input type="number" id="timer-seconds" placeholder="Seconds">
+						<button id="start-timer">Start Timer</button>
+						<button id="reset-timer">Reset Timer</button>
+						<h3 id="timer-display">00:00</h3>
+					</div>
+					<div id="stopwatch-container">
+						<h2>Stopwatch</h2>
+						<button id="start-stopwatch">Start</button>
+						<button id="stop-stopwatch">Stop</button>
+						<button id="reset-stopwatch">Reset</button>
+						<h3 id="stopwatch-display">00:00:00</h3>
+					</div>
+				</div>
+				<div id="password-container">
+					<h1>Password Generator</h1>
+					<div>
+						<label for="password-length">Length:</label>
+						<input type="number" id="password-length" value="12" min="6" max="100">
+					</div>
+					<div>
+						<label for="include-uppercase">Include Uppercase:</label>
+						<input type="checkbox" id="include-uppercase" checked>
+					</div>
+					<div>
+						<label for="include-lowercase">Include Lowercase:</label>
+						<input type="checkbox" id="include-lowercase" checked>
+					</div>
+					<div>
+						<label for="include-numbers">Include Numbers:</label>
+						<input type="checkbox" id="include-numbers" checked>
+					</div>
+					<div>
+						<label for="include-symbols">Include Symbols:</label>
+						<input type="checkbox" id="include-symbols" checked>
+					</div>
+					<button id="generate-password">Generate Password</button>
+					<input type="text" id="generated-password" readonly>
+					<input type="text" id="password-label" placeholder="Label (Optional)">
+					<button id="save-password">Save Password</button>
+					<button id="copy-password">Copy Password</button>
+				</div>
+				<div id="saved-passwords">
+					<h2>Saved Passwords</h2>
+					<table id="password-table">
+						<thead>
+							<tr>
+								<th>Label</th>
+								<th>Password</th>
+								<th>Options</th>
+							</tr>
+						</thead>
+						<tbody id="password-list"></tbody>
+					</table>
+				</div>
+
+				<h1>Bookmarks</h1>
+				<div id="bookmarks-container"></div>
+				<h1>History</h1>
+				<div id="history-container"></div>
+
+
+				<div>Made with love by Rumon from Dhaka.
+				</div>
+			</div>
+			<script src="note.js"></script>
+			<script src="script1 copy 4.js"></script>
+			<script src="script1.js"></script>
+			<script src="script1 copy.js"></script>
+			<script src="script1 copy 2.js"></script>
+			<script src="bookmark.js"></script>
+			<script src="history.js"></script>
+			<script src="clock.js"></script>
+			<script src="password.js"></script>
+			<script src="script.js"></script>
+			<script src="calendar.js"></script>
+			<script src="reminders.js"></script>
+			<script src="calculator.js"></script>
+			<script src="encription.js"></script>
+			<script src="crypto-js.min.js"></script>
+		</div>
+	</body>
+</html>
